@@ -1,0 +1,10 @@
+Actual-Size 
+
+The techniques in this project can be used to:
+ -Derive the physical size of a screen in inches and therefore the level of portability of the screen.
+ -Scale images to display the image contents at actual size on the screen.
+ -Add an appropriate amount of padding to links to make the hit area match an optimal finger tip size.
+
+Sadly, the "resolution", "max-resolution" & "min-resolution" media-query keywords are currently only supported by Firefox. 
+
+This is just an exercise in using it.

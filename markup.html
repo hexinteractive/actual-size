@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Actual Size</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jcode.js"></script>
+	
+</head>
+<body class="">
+
+
+<section id="desc">
+	<p>
+		This project demonstrates some uses of <code>window.matchMedia("(max-resolution: 326dpi)")</code> <em>currently only supported by Firefox</em>
+	</p>
+
+	<p>
+		For instance, by multiplying the dpi by the pixel height I get the size in inches. If I also do this with the width then use the pythagorean theorem I know that you are viewing this on a <span id="screenSize">unknown size</span> diagonal screen. (If you are using multiple screens, the results reflect the <strong>primary screen only</strong>) 
+		</p>
+
+		<p>
+		I find this interesting because it means I can derive the level of portability of the screen. A 2048×1536 screen at 264dpi (9.7" iPad3) is much more portable than a 2048×1536 screen at 96dpi (20.64" desktop monitor). I can also tell the difference between two screens with the same number of pixels (1920×1080). One is 21.5" monitor (102dpi) and other is a a 42" TV (52dpi). Given that the page is being viewed on a 42" TV I can style the page for a "ten foot experience"
+	</p>
+
+	<p>
+		I can also display the three huge coin images below at their actual size. <input id="toggle" type="button" value="show actual size" /> ecommerce sites could use this technique to display products such as jewelry, gadgets, accessories, clothing or even scientific specimens. 
+	</p>
+
+	<p>
+		I can also adjust link padding sizes on touch-enabled devices to match "ideal" finger sizes.
+	</p>
+</section>
+
+<section id="coins">
+<!-- Diameter  24.26 mm (0.955 in) -->
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a0/2006_Quarter_Proof.png" title="Actual diameter  24.26 mm (0.955 in)" data-inch-width="0.955in" />
+
+<!-- Diameter  19.05 mm (0.750 in) -->
+<img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/2010_cent_obverse.png" title="Actual diameter  19.05 mm (0.750 in)" data-inch-width="0.750in" />
+
+<!-- Diameter  17.91 mm (0.705in) -->
+<img src="http://upload.wikimedia.org/wikipedia/commons/1/17/2005_Dime_Obv_Unc_P.png" title="Actual diameter  17.91 mm (0.705in)" data-inch-width="0.705in" />
+<section>
+<div id="error"><h1>Sorry</h1> <p>Your browser does't support the 'max-resolution' media query.</p><p>Try it in Firefox.</p></div>
+</body>
+</html>
