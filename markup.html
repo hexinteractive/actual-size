@@ -7,18 +7,18 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="jcode.js"></script>
-	
+
 </head>
 <body class="">
 
 
 <section id="desc">
 	<p>
-		This project demonstrates some uses of <code>window.matchMedia("(max-resolution: 326dpi)")</code> <em>currently only supported by Firefox</em>
+		This project demonstrates some uses of <code>window.matchMedia("(max-resolution: <span id="screenDPI" title="your actual DPI">###</span>dpi)")</code> <em> Sadly, this was only supported by a few versions of Firefox. </em>  Get Firefox 15 <a href="http://download.mozilla.org/?product=firefox-15.0&os=win">PC</a> | <a href="download.mozilla.org/?product=firefox-15.0&os=osx">Mac</a>
 	</p>
 
 	<p>
-		For instance, by multiplying the dpi by the pixel height I get the size in inches. If I also do this with the width then use the pythagorean theorem I know that you are viewing this on a <span id="screenSize">unknown size</span> diagonal screen. (If you are using multiple screens, the results reflect the <strong>primary screen only</strong>) 
+		For instance, by multiplying the dpi by the pixel height I get the size in inches. If I also do this with the width then use the pythagorean theorem I know that you are viewing this on a <span id="screenSize">unknown size</span> diagonal screen. (Please disconnect any additional screens as they may corrupt the results of the primary screen)
 		</p>
 
 		<p>
@@ -26,7 +26,7 @@
 	</p>
 
 	<p>
-		I can also display the three huge coin images below at their actual size. <input id="toggle" type="button" value="show actual size" /> ecommerce sites could use this technique to display products such as jewelry, gadgets, accessories, clothing or even scientific specimens. 
+		I can also display the three huge coin images below at their actual size. <input id="toggle" type="button" value="show actual size" /> ecommerce sites could use this technique to display products such as jewelry, gadgets, accessories, clothing or even scientific specimens.
 	</p>
 
 	<p>

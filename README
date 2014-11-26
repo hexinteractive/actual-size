@@ -1,10 +1,31 @@
-Actual-Size 
+Actual-Size
 
 The techniques in this project can be used to:
  -Derive the physical size of a screen in inches and therefore the level of portability of the screen.
  -Scale images to display the image contents at actual size on the screen.
  -Add an appropriate amount of padding to links to make the hit area match an optimal finger tip size.
 
-Sadly, the "resolution", "max-resolution" & "min-resolution" media-query keywords are currently only supported by Firefox. 
+Sadly, the "resolution", "max-resolution" & "min-resolution" media-query keywords are currently only supported by Firefox.
+                                                                                      only supported by a few versions of Firefox and ends at 15. In versions 16 and later the DPI is fixed at 96
 
 This is just an exercise in using it.
+
+the most recent version of Firefox with functional support is 15. later versions "fixed" the inches in DPI to use the CSS standard inch which is always contains 96 dots. The fix makes the whole thing useless.
+
+knowing the DPI of your screen I can infer several qualities:
+- its physical dimensions (and its portability)
+- its spot on the privateness/socialness spectrum (how many people can easily view it at the same time)
+- your approx viewing distance (at least the recommended distance)
+
+
+points to get across:
+your screen is BLAH
+actual size images
+physical dimensions
+portability
+level of privateness/socialness
+viewing distance
+
+toggle actual-size on/off
+slightly after onload toggle on
+use transitions
