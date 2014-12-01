@@ -4,6 +4,7 @@ This project demonstrates some uses of `window.matchMedia("(max-resolution: ###d
 
 ###Get Firefox 15
 [PC](http://download.mozilla.org/?product=firefox-15.0&os=win) or  [Mac](http://download.mozilla.org/?product=firefox-15.0&os=osx)
+
 [Using Multiple Firefox profiles](https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles)
 
 ##Knowing the DPI of your screen I can infer several qualities:
