@@ -3,8 +3,8 @@ var res = 10;//TVs can have very low dpi/ppi even HD TVs
 
 while( !window.matchMedia("(max-resolution: "+ res +"dpi)").matches ) {
 
-    if(res > 500){
-      $('#error').show();
+    if(res > 700){
+      alert('either your sreen is TOO awesome, or something went wrong.');
       res = -1;
       break;
     }
@@ -32,12 +32,17 @@ while( !window.matchMedia("(max-resolution: "+ res +"dpi)").matches ) {
 
 $(document).ready(function(){
 
-
   var makeActualSize = function(){
-    var $imgs = $('body.actualSize img[data-inch-width]').each(function(){
-      var inchWidth = parseFloat($(this).attr('data-inch-width'), 10);
+    $('img[data-inch-width]').each(function(){
+      var img = this,
+          inchWidth = parseFloat($(img).attr('data-inch-width'), 10);
 
-      $(this).css('width', inchWidth*res);
+      $(img).on('load',function() {
+        setTimeout(function() {
+          $(img).css('width', inchWidth*res);
+        }, 1000);
+      });
+
       console.log('inchWidth: ', inchWidth);
       console.log('res: ', res);
       console.log(' - - - ');
@@ -53,30 +58,19 @@ $(document).ready(function(){
     return ext;
   };
 
-  if(res !== -1) {
-      $('#screenDPI').text(res);
-      $('#screenSize').text((getScreenSize(res)).inchDiagonal + '"').css({'color':'#060', 'font-weight':'bold'});
+  // if(res !== -1) {
+  //     // $('#screenDPI').text(res);
+  //     s = getScreenSize(res);
+  //     // $('#screenSize').css({height: s.inchHeight*5+'px', width: s.inchWidth*5+'px'});
+  //     // $('#screenSize span').text((getScreenSize(res)).inchDiagonal + '"');
+  // }
+  if(window.navigator.userAgent.search('Firefox/15') === -1) {
+    $('body').addClass('notFF15');
+    alert('this Demonstration requires Firefox 15.');
+  } else {
+    $('body').addClass('FF15');
+    $('#screenSize span').text((getScreenSize(res)).inchDiagonal + '"');
+    makeActualSize();
   }
 
-  // console.log('96: '+ (getScreenSize(96)).inchDiagonal);
-
-  $('#toggle').click(function(e){
-    $('body').toggleClass('actualSize');
-    makeActualSize();
-  });
-
-
-  // iPhone 4 & iPhone  4S 326dpi
-  // iPhone 3 etc 163dpi
-var str = "(resolution: "+ res +"dpi)";
-var x = window.matchMedia(str);
-  console.log(str + ": " + x.matches );
-  // console.log('res: ', res);
-
-  var dpr = "(-webkit-device-pixel-ratio: 1)";
-  var answer = window.matchMedia(dpr);
-    console.log(dpr + ": " + answer.matches );
 });
-
-
-

@@ -1,31 +1,21 @@
-Actual-Size
+#Actual-Size
 
-The techniques in this project can be used to:
- -Derive the physical size of a screen in inches and therefore the level of portability of the screen.
- -Scale images to display the image contents at actual size on the screen.
- -Add an appropriate amount of padding to links to make the hit area match an optimal finger tip size.
+This project demonstrates some uses of `window.matchMedia("(max-resolution: ###dpi)")` Sadly, this was only supported by a few versions of Firefox and ends with 15. Later versions "fixed" the Inches in DPI to use the CSS standard inch which is always contains 96 dots. The fix makes the whole thing useless.
 
-Sadly, the "resolution", "max-resolution" & "min-resolution" media-query keywords are currently only supported by Firefox.
-                                                                                      only supported by a few versions of Firefox and ends at 15. In versions 16 and later the DPI is fixed at 96
+###Get Firefox 15
+[http://download.mozilla.org/?product=firefox-15.0&os=win](PC) or  [download.mozilla.org/?product=firefox-15.0&os=osx](Mac)
+[https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles](Using Multiple Firefox profiles)
 
-This is just an exercise in using it.
+##Knowing the DPI of your screen I can infer several qualities:
+* Its physical dimensions, and thus its portability.
+* How many people can easily view the screen at the same time (privateness/socialness continuum)
+* Your approx viewing distance (or at least the recommended distance)
 
-the most recent version of Firefox with functional support is 15. later versions "fixed" the inches in DPI to use the CSS standard inch which is always contains 96 dots. The fix makes the whole thing useless.
+##Some on-screen things I can do:
+* Scale images to display their contents at actual size. (think jewelery e-commerce)
+* When on a touchable device add padding to buttons to increase touch target size for an adult fingertip.
+* When on a large TV, style the page for a "ten foot experience"
 
-knowing the DPI of your screen I can infer several qualities:
-- its physical dimensions (and its portability)
-- its spot on the privateness/socialness spectrum (how many people can easily view it at the same time)
-- your approx viewing distance (at least the recommended distance)
+##why should I care?
+Because it's possible to have 1080 vertical pixels on TVs, laptops, phones and other devices. Simply knowing the number of pixels used to display your page doesn't tell you very much anymore.
 
-
-points to get across:
-your screen is BLAH
-actual size images
-physical dimensions
-portability
-level of privateness/socialness
-viewing distance
-
-toggle actual-size on/off
-slightly after onload toggle on
-use transitions
