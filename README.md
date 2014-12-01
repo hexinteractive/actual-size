@@ -3,8 +3,8 @@
 This project demonstrates some uses of `window.matchMedia("(max-resolution: ###dpi)")` Sadly, this was only supported by a few versions of Firefox and ends with 15. Later versions "fixed" the Inches in DPI to use the CSS standard inch which is always contains 96 dots. The fix makes the whole thing useless.
 
 ###Get Firefox 15
-[http://download.mozilla.org/?product=firefox-15.0&os=win](PC) or  [download.mozilla.org/?product=firefox-15.0&os=osx](Mac)
-[https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles](Using Multiple Firefox profiles)
+[PC](http://download.mozilla.org/?product=firefox-15.0&os=win) or  [Mac](http://download.mozilla.org/?product=firefox-15.0&os=osx)
+[Using Multiple Firefox profiles](https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles)
 
 ##Knowing the DPI of your screen I can infer several qualities:
 * Its physical dimensions, and thus its portability.
