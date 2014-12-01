@@ -1,0 +1,148 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #E5E5E5;
+  margin: 0;
+  padding: 0;
+  font-family:  'helvetica neue', arial, verdana, sans-serif;
+  font-size: 16px;
+  font-weight:  400;
+  line-height: 1.6em;
+  color: #333;
+}
+
+head {display: block;}
+
+title {
+  display: block;
+  padding: 0.3em 1em 0.5em 1em;
+  background-color: #555;
+  margin: 0 auto;
+  font-size: 32px;
+  color: #fff;
+}
+
+code {
+  font-family: monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  background: #DEDEff;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 200;
+  margin: 1.5em 0 0.25em 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 1em;
+  list-style: circle;
+}
+
+.notFF15 #getFirefox {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 0.5em;
+  background: #d6e6e6;
+  border: 1px solid #669999;
+  border-radius: 6px;
+}
+
+.notFF15 #getFirefox span {
+  color: #cc3300;
+}
+
+.notFF15 #getFirefox a {
+  color: #0566a7;
+  text-decoration: none;
+}
+
+.notFF15 #hold,
+.FF15 #getFirefox,
+.FF15 #profiles {
+  display: none;
+}
+
+#profiles {
+  display: inline-block;
+}
+
+#screenSize {
+/*  display: inline-block;
+  background: #789;
+  color: white;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;*/
+  /*font-size: 36px;*/
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2em 1em 0;
+  padding: 0 0.5em;
+  text-align: center;
+  background: #eee;
+  border-radius: 6px;
+  /*border: 1px solid #999;*/
+}
+
+#screenSize span {
+  font-size: 70px;
+  line-height: normal;
+  display: block;
+}
+
+#error {
+  display: none;
+  position: relative;
+  width: 400px;
+  margin: 60px auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1em;
+  border: 3px solid #922;
+  color: #300;
+}
+
+#error h1,
+#error p {
+  margin: 0 0 0.5em 0;
+}
+
+#error p {
+  font-size: 16px;
+}
+
+#desc {
+  width: 900px;
+  border-radius: 6px;
+  border: 2px solid #bbb;
+  background: #F5F5F5;
+  padding: 0.5em 1em 1.5em;
+  margin: 30px;
+}
+
+#coins {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.coin {
+  height: auto;
+  width: 200px;
+  -moz-transition: width 0.4s 0s ease-in-out;
+}
+
+#hold {
+  font-size: 12px;
+}
+
+footer {
+  width: 900px;
+  text-align: center;
+  font-size: 12px;
+}
+

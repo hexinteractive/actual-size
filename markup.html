@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="Bryan Yurasits">
+	<title>Actual Size</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jcode.js"></script>
+
+</head>
+<body class="">
+
+
+<section id="desc">
+	<p>
+		This project demonstrates some uses of <code>window.matchMedia("(max-resolution: <span id="screenDPI" title="your actual DPI">###</span>dpi)")</code> Sadly, this was only supported by a few versions of Firefox and ends with 15. Later versions "fixed" the Inches in DPI to use the CSS standard inch which is always contains 96 dots. The fix makes the whole thing useless.
+	</p>
+
+	<div id="screenSize">
+		Your diagonal screen size is <span>unknown</span>
+	</div>
+
+	<div id="getFirefox">
+		<span>Get Firefox 15</span> <a href="http://download.mozilla.org/?product=firefox-15.0&os=win" target="_blank">PC</a> | <a href="download.mozilla.org/?product=firefox-15.0&os=osx" target="_blank">Mac</a>
+	</div>
+
+	<div id="profiles">
+		<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles" target="_blank">Using Multiple Firefox profiles</a>
+	</div>
+
+	<section id="coins">
+		<!-- Diameter  24.26 mm (0.955 in) -->
+		<img class="coin" src="http://upload.wikimedia.org/wikipedia/commons/a/a0/2006_Quarter_Proof.png" title="Actual diameter  24.26 mm (0.955 in)" data-inch-width="0.955in" />
+
+		<!-- Diameter  19.05 mm (0.750 in) -->
+		<img class="coin" src="http://upload.wikimedia.org/wikipedia/commons/0/0c/2010_cent_obverse.png" title="Actual diameter  19.05 mm (0.750 in)" data-inch-width="0.750in" />
+
+		<!-- Diameter  17.91 mm (0.705in) -->
+		<img class="coin" src="http://upload.wikimedia.org/wikipedia/commons/1/17/2005_Dime_Obv_Unc_P.png" title="Actual diameter  17.91 mm (0.705in)" data-inch-width="0.705in" />
+
+		<div id="hold">(Go ahead, hold a coin up to your screen)</div>
+	</section>
+
+	<h2 class="heading">Knowing the DPI of your screen I can infer several qualities:</h2>
+	<ul>
+		<li>Its physical dimensions, and thus its portability.</li>
+		<li>How many people can easily view the screen at the same time (privateness/socialness continuum)</li>
+		<li>Your approx viewing distance (or at least the recommended distance)</li>
+	</ul>
+
+	<h2 class="heading">Some on-screen things I can do:</h2>
+	<ul>
+		<li>Scale images to display their contents at actual size. (think jewelery e-commerce)</li>
+		<li>When on a touchable device add padding to buttons to increase touch target size for an adult fingertip.</li>
+		<li>When on a large TV, style the page for a "ten foot experience"</li>
+	</ul>
+
+	<h2 class="heading">why should I care?</h2>
+	<p>Because it's possible to have 1080 vertical pixels on TVs, laptops, phones and other devices. Simply knowing the number of pixels used to display your page doesn't tell you very much anymore. </p>
+</section>
+
+
+<!-- <div id="error"><h1>Sorry</h1> <p>Your browser does't support the 'max-resolution' media query.</p><p>Try it in Firefox 15.</p></div> -->
+
+<footer>
+	<a href="https://github.com/hexinteractive/actual-size"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</footer>
+</body>
+</html>
